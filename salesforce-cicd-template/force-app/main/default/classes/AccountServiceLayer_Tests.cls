@@ -13,7 +13,6 @@ private inherited sharing class AccountServiceLayer_Tests {
         );
     }
 
-
     @isTest
     static void testChangeShippingStreetNegativeNoEditAccess() {
         TriggerHandler.bypass('AccountTriggerHandler');
@@ -47,7 +46,6 @@ private inherited sharing class AccountServiceLayer_Tests {
         );
     }
 
-    
     @isTest
     static void incrementDescriptionOnBulkAccountsPositive() {
         List<Account> theAccounts = (List<Account>) TestFactory.createSObjectList(
